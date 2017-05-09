@@ -102,7 +102,7 @@ server <- function(input, output) {
       geom_bar() +
       xlab("Year") +
       ylab("Number of Incidents") +
-      ggtitle("Crime Incidents in Los Angeles Over Time") + 
+      ggtitle(paste("Crime Incidents by Years For", zip())) + 
       theme(plot.title=element_text(hjust=0.5)) +
       scale_x_continuous(breaks = seq(2005,2016,1))
   })
